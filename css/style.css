@@ -1034,6 +1034,12 @@ ol {
     min-height:650px;
     text-align: center;
 }
+
+@media (max-width: 576px) {
+	#client {
+		background-position: center;
+	}
+}
 .customer-say {
     padding-top:9em;
 }
@@ -3065,4 +3071,8 @@ ul.social li a{
 	font-size: 12px;
 	color: #fff;
 	margin: 0px 0px 5px 0px;
+}
+
+.choose__title {
+	margin-bottom: 20px;
 }
