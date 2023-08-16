@@ -19,6 +19,8 @@ feedbackForm.addEventListener('submit', async (e) => {
   const feedbackUnloadingDate = feedbackForm.querySelector("#feedbackUnloadingDate");
   const feedbackUnloadingStartTime = feedbackForm.querySelector("#feedbackUnloadingStartTime");
 
+  const feedbackDescription = feedbackForm.querySelector("#feedbackDescription");
+
   const feedbackBtn = feedbackForm.querySelector('.feedback__btn')
 
   // console.log(feedbackTel.value, feedbackLoading.value, feedbackLoadingDate.value, feedbackLoadingStartTime.value, feedbackUnloading.value, feedbackUnloadingDate.value, feedbackUnloadingStartTime.value)
@@ -34,6 +36,7 @@ feedbackForm.addEventListener('submit', async (e) => {
         unloadingAddress: feedbackUnloading.value,
         unloadingDate: feedbackUnloadingDate.value,
         unloadingStartTime: feedbackUnloadingStartTime.value,
+        description: feedbackDescription.value
       }),
       headers: {
         "Content-Type": "application/json",
