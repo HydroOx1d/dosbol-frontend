@@ -1025,7 +1025,7 @@ ol {
 
 /*--client--*/
 #client {
-    background: url(../images/bottom.jpg) no-repeat 0px 0px;
+    background: url(../images/customers.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1334,7 +1334,7 @@ figure.effect-apollo:hover p {
 /*-- //gallery --*/
 /*--timer--*/
 .time-bg {
-    background: url(../images/office.jpg)no-repeat 0px 0px;
+    background: url(../images/men-works.jpg)no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1770,6 +1770,13 @@ p.wel-text{
 	    background: #333;
 	padding:4em 0;
 }
+
+@media (max-width: 992px) {
+	.footer-top > *:not(:last-child) {
+		margin: 0px 0px 40px 0px;
+	}
+}
+
 .footer-top p{
 	    font-size: 0.9em;
 }
@@ -2986,7 +2993,7 @@ ul.social li a{
 
 .feedback__select select {
 	min-height: 35px;
-	font-size: 12px;
+	font-size: 14px;
 	padding-left: 10px;
 	background-color: rgba(255,255,255, 1);	
 }
@@ -2997,4 +3004,47 @@ ul.social li a{
 	margin: 10px 0px 0px 0px;
 	background-color: rgb(42, 210, 201);
 	color: #fff;
+}
+
+.about {
+	padding: 60px 0;
+	display: flex;
+	align-items: center;
+}
+
+.about > * {
+	flex: 0 1 50%;
+}
+
+.about .ab-right {
+	padding: 0 0 0 20px;
+}
+
+@media (max-width: 992px) {
+	.about {
+		flex-direction: column;
+	}
+
+	.about > * {
+		flex-direction: column;
+		flex: 0 1 100%;
+		width: 100%;
+	}
+
+	.about > *:not(:last-child) {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+.customer-say .tittle.two {
+	color: #333;
+}
+
+.banner-bottom__title.tittle {
+	text-align: center;
+	border-left: none;
+}
+
+.owl-theme .owl-controls {
+	margin-left: 0!important;
 }
