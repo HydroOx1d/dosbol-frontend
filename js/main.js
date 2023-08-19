@@ -5,6 +5,29 @@ $(window).load(function() {
 });
 
 
+$(document).ready(function () {
+  $(".customer__carousel").owlCarousel({
+    items: 2,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    margin: 20,
+
+    responsiveClass: true,
+
+    responsive: {
+      320: {
+        items: 1,
+      },
+      767: {
+        items: 2
+      }
+    }
+  });
+});
+
+
 const feedbackForm = document.querySelector('.feedback__form')
 
 feedbackForm.addEventListener('submit', async (e) => {
